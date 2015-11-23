@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\Eddi Fey\Downloads\BATDemo-master\BATDemo-master\BATDemoFramework\bin\Debug\BATDemoFramework.dll" total="0" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-11-22" time="09:21:32">
+  <environment nunit-version="2.6.3.13283" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\_projects\Kurryer\SeleniumTests\nunit\bin" machine-name="EFEY-HTPC" user="Eddi Fey" user-domain="EFEY-HTPC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\Eddi Fey\Downloads\BATDemo-master\BATDemo-master\BATDemoFramework\bin\Debug\BATDemoFramework.dll" executed="True" result="Failure" success="False" time="0.006" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="BATDemoFramework" executed="True" result="Failure" success="False" time="0.006" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="TestBase" executed="True" result="Error" success="False" time="0.005" asserts="0">
+            <failure>
+              <message><![CDATA[SetUp : System.TypeInitializationException : The type initializer for 'BATDemoFramework.Browser' threw an exception.
+  ----> OpenQA.Selenium.WebDriverException : Failed to start up socket within 45000 ms. Attempted to connect to the following addresses: 127.0.0.1:7055]]></message>
+              <stack-trace><![CDATA[at BATDemoFramework.Browser.Initialize()
+at BATDemoFramework.TestBase.Initialize() in C:\Users\Eddi Fey\Downloads\BATDemo-master\BATDemo-master\BATDemoFramework\TestBase.cs:line 12
+--WebDriverException
+at OpenQA.Selenium.Firefox.FirefoxDriverServer.ConnectToBrowser(TimeSpan timeToWait)
+at OpenQA.Selenium.Firefox.FirefoxDriverServer.Start()
+at OpenQA.Selenium.Firefox.FirefoxDriverCommandExecutor.Execute(Command commandToExecute)
+at OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+at OpenQA.Selenium.Remote.RemoteWebDriver.StartSession(ICapabilities desiredCapabilities)
+at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)
+at OpenQA.Selenium.Firefox.FirefoxDriver..ctor(FirefoxBinary binary, FirefoxProfile profile)
+at BATDemoFramework.Browser..cctor() in C:\Users\Eddi Fey\Downloads\BATDemo-master\BATDemo-master\BATDemoFramework\Browser.cs:line 10
+]]></stack-trace>
+            </failure>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

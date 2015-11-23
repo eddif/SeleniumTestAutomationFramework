@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="D:\_Projects\_stage\WhenIWorkDemo\WIWDemoTests\bin\Debug\WIWDemoTests.dll" total="3" errors="0" failures="0" not-run="1" inconclusive="0" ignored="1" skipped="0" invalid="0" date="2015-11-23" time="12:44:15">
+  <environment nunit-version="2.6.3.13283" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\_Projects\_stage\WhenIWorkDemo\packages\nunit_runnable\bin" machine-name="EFEY-HTPC" user="Eddi Fey" user-domain="EFEY-HTPC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="D:\_Projects\_stage\WhenIWorkDemo\WIWDemoTests\bin\Debug\WIWDemoTests.dll" executed="True" result="Success" success="True" time="25.587" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="WIWDemoTests" executed="True" result="Success" success="True" time="25.581" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="SmokeTests" executed="True" result="Success" success="True" time="25.577" asserts="0">
+            <results>
+              <test-case name="WIWDemoTests.SmokeTests.CanAccessLoginPage" executed="True" result="Success" success="True" time="5.748" asserts="1" />
+              <test-case name="WIWDemoTests.SmokeTests.CanAccessRegisterPage" executed="True" result="Success" success="True" time="4.386" asserts="1" />
+              <test-case name="WIWDemoTests.SmokeTests.CanAccessResetPasswordPage" executed="True" result="Success" success="True" time="4.268" asserts="1" />
+              <test-case name="WIWDemoTests.SmokeTests.CanRegisterAsNewUser" executed="False" result="Ignored">
+                <reason>
+                  <message><![CDATA[SAMPLE - NOT TESTED, BUT COULD WORK - DID NOT WANT TO TEST FATE AND BLOAT DATABASE]]></message>
+                </reason>
+              </test-case>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
