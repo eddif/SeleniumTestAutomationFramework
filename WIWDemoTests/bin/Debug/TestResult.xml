@@ -1,22 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!--This file represents the results of running a test suite-->
-<test-results name="D:\_Projects\_stage\WhenIWorkDemo\WIWDemoTests\bin\Debug\WIWDemoTests.dll" total="3" errors="0" failures="0" not-run="1" inconclusive="0" ignored="1" skipped="0" invalid="0" date="2015-11-23" time="12:44:15">
-  <environment nunit-version="2.6.3.13283" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\_Projects\_stage\WhenIWorkDemo\packages\nunit_runnable\bin" machine-name="EFEY-HTPC" user="Eddi Fey" user-domain="EFEY-HTPC" />
+<test-results name="D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWDemoTests\bin\Debug\WIWDemoTests.dll" total="1" errors="1" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2015-12-20" time="15:23:13">
+  <environment nunit-version="2.6.4.14350" clr-version="4.0.30319.42000" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWDemoFramework\bin\Debug" machine-name="EFEY-HTPC" user="Eddi Fey" user-domain="EFEY-HTPC" />
   <culture-info current-culture="en-US" current-uiculture="en-US" />
-  <test-suite type="Assembly" name="D:\_Projects\_stage\WhenIWorkDemo\WIWDemoTests\bin\Debug\WIWDemoTests.dll" executed="True" result="Success" success="True" time="25.587" asserts="0">
+  <test-suite type="Assembly" name="D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWDemoTests\bin\Debug\WIWDemoTests.dll" executed="True" result="Failure" success="False" time="12.901" asserts="0">
     <results>
-      <test-suite type="Namespace" name="WIWDemoTests" executed="True" result="Success" success="True" time="25.581" asserts="0">
+      <test-suite type="Namespace" name="WIWDemoTests" executed="True" result="Failure" success="False" time="12.894" asserts="0">
         <results>
-          <test-suite type="TestFixture" name="SmokeTests" executed="True" result="Success" success="True" time="25.577" asserts="0">
+          <test-suite type="Namespace" name="Features" executed="True" result="Failure" success="False" time="12.894" asserts="0">
             <results>
-              <test-case name="WIWDemoTests.SmokeTests.CanAccessLoginPage" executed="True" result="Success" success="True" time="5.748" asserts="1" />
-              <test-case name="WIWDemoTests.SmokeTests.CanAccessRegisterPage" executed="True" result="Success" success="True" time="4.386" asserts="1" />
-              <test-case name="WIWDemoTests.SmokeTests.CanAccessResetPasswordPage" executed="True" result="Success" success="True" time="4.268" asserts="1" />
-              <test-case name="WIWDemoTests.SmokeTests.CanRegisterAsNewUser" executed="False" result="Ignored">
-                <reason>
-                  <message><![CDATA[SAMPLE - NOT TESTED, BUT COULD WORK - DID NOT WANT TO TEST FATE AND BLOAT DATABASE]]></message>
-                </reason>
-              </test-case>
+              <test-suite type="TestFixture" name="PricingPlanFeature" description="PricingPlan" executed="True" result="Failure" success="False" time="12.893" asserts="0">
+                <results>
+                  <test-case name="WIWDemoTests.Features.PricingPlanFeature.PricingPlanIsMonthlyServiceTypeIsEmployeeSchedulingTextMessageSupportIsUnitedStates" description="Pricing plan is Monthly, Service Type is Employee Scheduling, Text Message Support is United States" executed="True" result="Error" success="False" time="12.503" asserts="0">
+                    <categories>
+                      <category name="pricingOptions" />
+                    </categories>
+                    <failure>
+                      <message><![CDATA[TechTalk.SpecFlow.BindingException : Parameter count mismatch! The binding method 'PricingPlanSteps.ThenThePriceAmountDisplayedIs(Table)' should have 2 parameters
+TearDown : System.NullReferenceException : Object reference not set to an instance of an object.]]></message>
+                      <stack-trace><![CDATA[at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.GetExecuteArguments(BindingMatch match)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(StepInstance stepInstance)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+at WIWDemoTests.Features.PricingPlanFeature.ScenarioCleanup() in D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWDemoTests\Features\PricingPlan.feature.cs:line 0
+at WIWDemoTests.Features.PricingPlanFeature.PricingPlanIsMonthlyServiceTypeIsEmployeeSchedulingTextMessageSupportIsUnitedStates() in D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWDemoTests\Features\PricingPlan.feature:line 14
+--TearDown
+at WIWDemoTests.PricingPlanSteps.TearDown() in D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWDemoTests\Features\PricingPlanSteps.cs:line 28
+at TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan& duration)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.FireEvents(HookType bindingEvent)
+at TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnScenarioEnd()
+at WIWDemoTests.Features.PricingPlanFeature.ScenarioTearDown() in D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWDemoTests\Features\PricingPlan.feature.cs:line 0
+]]></stack-trace>
+                    </failure>
+                  </test-case>
+                </results>
+              </test-suite>
             </results>
           </test-suite>
         </results>

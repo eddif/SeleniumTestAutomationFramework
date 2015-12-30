@@ -1,14 +1,20 @@
 ﻿using WIWDemoFramework;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 
 namespace WIWDemoFramework
 {
     public static class Pages
     {
+
+       // public static IWebDriver _driver;
+
         private static T GetPage<T>() where T : new()
         {
             var page = new T();
+            IWebDriver driver = Browser._Driver;
             PageFactory.InitElements(Browser.Driver, page);
+            
             return page;
         }
 
@@ -35,6 +41,11 @@ namespace WIWDemoFramework
         public static ForgotPasswordPage ForgotPassword
         {
             get { return GetPage<ForgotPasswordPage>(); }
+        }
+
+        public static PricingPage Pricing
+        {
+            get { return GetPage<PricingPage>(); }
         }
     }
 }

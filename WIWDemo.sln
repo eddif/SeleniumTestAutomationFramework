@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIWDemoFramework", "WIWDemo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIWDemoTests", "WIWDemoTests\WIWDemoTests.csproj", "{EF30439C-2141-4E70-92BB-D72D7CE7CD6A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WIWCucumberAppTests", "WIWCucumberAppTests\WIWCucumberAppTests.csproj", "{E0D59087-7183-4EBE-A50C-CEF863B3EB11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EF30439C-2141-4E70-92BB-D72D7CE7CD6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF30439C-2141-4E70-92BB-D72D7CE7CD6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF30439C-2141-4E70-92BB-D72D7CE7CD6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0D59087-7183-4EBE-A50C-CEF863B3EB11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D59087-7183-4EBE-A50C-CEF863B3EB11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D59087-7183-4EBE-A50C-CEF863B3EB11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D59087-7183-4EBE-A50C-CEF863B3EB11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

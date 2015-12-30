@@ -24,10 +24,10 @@ Steps to execute:
 
 * Click Run
 
-Versions:
-Visual Studio: 2015
-Selenium WebDriver: 2.48.2
-NUnit 2.6.4
-SpecFlow: 1.9.0.77
+Current Versions:
+* Visual Studio: 2015
+* Selenium WebDriver: 2.48.2
+* NUnit 2.6.4
+* SpecFlow: 1.9.0.77
 
 

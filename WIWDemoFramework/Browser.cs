@@ -4,12 +4,21 @@ using OpenQA.Selenium.Firefox;
 
 namespace WIWDemoFramework
 {
-    public static class Browser
+    public class Browser
     {
-        //private static string baseUrl = "http://localhost:12142/";
+        //private static string baseUrl = "http://localhost:121212/";
         private static string baseUrl = "https://wheniwork.com/";
 
         private static IWebDriver webDriver = new FirefoxDriver();
+
+        public IWebDriver WebDriver { get; set; }
+
+        public Browser(IWebDriver webDriver)
+        {
+            WebDriver = webDriver;
+        }
+
+
         public static void Initialize()
         {
             Goto("");
@@ -26,6 +35,11 @@ namespace WIWDemoFramework
         }
 
         public static ISearchContext Driver
+        {
+            get { return webDriver; }
+        }
+
+        public static IWebDriver _Driver
         {
             get { return webDriver; }
         }
