@@ -1,8 +1,8 @@
 # Selenium Example - Using C#.NET, Selenium, SpecFlow (.NET version of Cucumber), and the NUnit Test Runner
 
-This solution demonstrates automated testing web pages with Selenium, C#.NET and NUnit. Also included is a seperate project to demonstrate how to tie in SpecFlow with Selenium.
+This solution demonstrates automated testing web pages with Selenium, C#.NET and NUnit. Also included is a seperate project to demonstrate how to tie in SpecFlow with Selenium. (NOTE: SpecFlow is WIP - may not be fully functional)
 
-Solution can also be used as a template for new Selenium test projects.
+Solution can also be used as a base template for new Selenium test projects.
 
 Tests are structured according to the Selenium Page Object Pattern.
 
@@ -18,7 +18,7 @@ Steps to execute:
 
 * Open: \packages\nunit_runnable\bin\nunit.exe
 
-* Click File > Open project and open \WIWDemoTests\bin\Debug\WIWDemoTests.dll
+* Click File > Open project and open \SeleniumDemoTests\bin\Debug\SeleniumDemoTests.dll
 
 * Select tests to run
 
