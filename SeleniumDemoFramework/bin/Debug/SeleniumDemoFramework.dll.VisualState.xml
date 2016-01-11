@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ShowCheckBoxes="true">
+  <TopNode>[0-1001]D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\bin\Debug\SeleniumDemoFramework.dll</TopNode>
+  <SelectedNode>[0-1001]D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\bin\Debug\SeleniumDemoFramework.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1001]D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\bin\Debug\SeleniumDemoFramework.dll" Expanded="true" />
+    <Node UniqueName="[0-1002]SeleniumDemoFramework" Expanded="true" />
+    <Node UniqueName="[0-1000]SeleniumDemoFramework.TestBase" Checked="true" />
+  </Nodes>
+</VisualState>

@@ -1,5 +1,0 @@
-D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWCucumberAppTests\bin\Debug\WIWCucumberAppTests.dll.config
-D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWCucumberAppTests\bin\Debug\WIWCucumberAppTests.dll
-D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWCucumberAppTests\bin\Debug\WIWCucumberAppTests.pdb
-D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWCucumberAppTests\obj\Debug\WIWCucumberAppTests.dll
-D:\_Projects\_stage\WhenIWorkDemo\WhenIWorkDemo\WIWCucumberAppTests\obj\Debug\WIWCucumberAppTests.pdb
