@@ -7,23 +7,21 @@ namespace SeleniumDemoFramework
 {
     public class LoginPage
     {
-        [FindsBy(How = How.Id, Using = "login-username")]
-        private IWebElement emailAddressTextField;
+        [FindsBy(How = How.CssSelector, Using = "sel-email")]
+        private IWebElement emailField;
 
-        [FindsBy(How = How.Id, Using = "login-password")]
-        private IWebElement passwordTextField;
+        [FindsBy(How = How.CssSelector, Using = "sel-password")]
+        private IWebElement passwordField;
 
-        [FindsBy(How = How.CssSelector, Using = "button.button-kit")]
-        private IWebElement logInButton;
+        [FindsBy(How = How.CssSelector, Using = "sel-login")]
+        private IWebElement loginButton;
 
-        [FindsBy(How = How.CssSelector, Using = "btn-google")]
+        [FindsBy(How = How.CssSelector, Using = "sel-google")] //not complete
         private IWebElement signInWithGoogleButton;
 
-        [FindsBy(How = How.Id, Using = "id-login-register")]
-        private IWebElement registerNowButton;
+        [FindsBy(How = How.Id, Using = "RememberMe")]
+        private IWebElement rememberMeCheckbox;
 
-        [FindsBy(How = How.Id, Using = "id-login-forgot")]
-        private IWebElement forgotPasswordButton;
 
         public void Goto()
         {
@@ -34,11 +32,6 @@ namespace SeleniumDemoFramework
         {
             return Browser.Title.Contains("Login");
             
-        }
-
-        public void ClickForgotPasswordButton()
-        {
-            forgotPasswordButton.Click();
         }
 
         public void LogInAsLastRegisteredUser()
@@ -60,22 +53,22 @@ namespace SeleniumDemoFramework
 
         public void ClickRegisterNowButton()
         {
-            registerNowButton.Click();
+            rememberMeCheckbox.Click();
         }
 
 
         private void ClearLoginFields()
         {
-            emailAddressTextField.Clear();
-            passwordTextField.Clear();
+            emailField.Clear();
+            passwordField.Clear();
         }
 
         private void LogIn(User user)
         {
             ClearLoginFields();
-            emailAddressTextField.SendKeys(user.EmailAddress);
-            passwordTextField.SendKeys(user.Password);
-            logInButton.Click();
+            emailField.SendKeys(user.EmailAddress);
+            passwordField.SendKeys(user.Password);
+            loginButton.Click();
         }
 
         public enum LoginOptions

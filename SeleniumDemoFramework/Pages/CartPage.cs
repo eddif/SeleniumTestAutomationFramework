@@ -8,7 +8,7 @@ namespace SeleniumDemoFramework
     {
         public void Goto()
         {
-            Browser.Goto("ShoppingCart");
+            Browser.Goto("/ShoppingCart");
         }
 
         public bool IsAt()

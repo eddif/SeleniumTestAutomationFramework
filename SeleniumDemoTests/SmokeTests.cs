@@ -10,60 +10,76 @@ namespace SeleniumDemoTests
         [Test]
         public void CanAccessAboutPage()
         {
-            Pages.Login.Goto();
-            Assert.IsTrue(Pages.Login.IsAt());
+            Pages.Home.Goto();
+            Pages.TopNavigation.clickAboutLink();
+            Assert.IsTrue(Pages.About.IsAt());
+            Assert.IsTrue(Browser.CurrentURL.Contains("About"));
         }
 
         [Test]
         public void CanAccessContactPage()
         {
-            Pages.Login.Goto();
-            Pages.Login.ClickForgotPasswordButton();
-            Assert.IsTrue(Browser.CurrentURL.Contains("forgot"));
+            Pages.Home.Goto();
+            Pages.TopNavigation.clickContactLink();
+            Assert.IsTrue(Pages.Contact.IsAt());
+            Assert.IsTrue(Browser.CurrentURL.Contains("Contact"));
         }
 
         [Test]
         public void CanAccessProductsPage()
         {
-            Pages.Login.Goto();
-            Pages.Login.ClickForgotPasswordButton();
-            Assert.IsTrue(Browser.CurrentURL.Contains("forgot"));
+            Pages.Home.Goto();
+            Pages.TopNavigation.clickProductsLink();
+            Assert.IsTrue(Pages.Products.IsAt());
+            Assert.IsTrue(Browser.CurrentURL.Contains("Products"));
         }
 
         [Test]
         public void CanAccessCartPage()
         {
-            Pages.Login.Goto();
-            Pages.Login.ClickForgotPasswordButton();
-            Assert.IsTrue(Browser.CurrentURL.Contains("forgot"));
+            Pages.Home.Goto();
+            Pages.TopNavigation.clickCartLink();
+            Assert.IsTrue(Pages.Cart.IsAt());
+            Assert.IsTrue(Browser.CurrentURL.Contains("ShoppingCart"));
         }
 
         [Test]
         public void CanAccessRegisterPage()
         {
-            Pages.Login.Goto();
-            Pages.Login.ClickRegisterNowButton();
-            Assert.IsTrue(Browser.CurrentURL.Contains("register"));
+            Pages.Home.Goto();
+            Pages.TopNavigation.clickRegisterLink();
+            Assert.IsTrue(Pages.Register.IsAt());
+            Assert.IsTrue(Browser.CurrentURL.Contains("Register"));
         }
 
         [Test]
         public void CanAccessLoginPage()
         {
-            Pages.Login.Goto();
-            Pages.Login.ClickRegisterNowButton();
-            Assert.IsTrue(Browser.CurrentURL.Contains("register"));
+            Pages.Home.Goto();
+            Pages.TopNavigation.clickLoginLink();
+            Assert.IsTrue(Pages.Login.IsAt());
+            Assert.IsTrue(Browser.CurrentURL.Contains("Log in"));
         }
 
         [Test]
         public void CanRegisterAsNewUser()
         {
-            Pages.Login.Goto();
-            Pages.Login.ClickRegisterNowButton();
+            Pages.Register.Goto();
             Pages.Register.RegisterNewUser();
-            Assert.IsTrue(Browser.CurrentURL.Contains("Home"));
+
+            Assert.IsTrue(Pages.Register.IsAt());
+
+            //TBD - confirm two factor authentication (e.g. user must validate email before completing registration)
         }
 
-        
+        [Test]
+        public void CanLoginAsUser()
+        {
+            Pages.Login.Goto();
+            Pages.Login.LogInAsLastRegisteredUser();
+
+            Assert.IsTrue(Pages.TopNavigation.userName.Displayed);
+        }
     }
 
 

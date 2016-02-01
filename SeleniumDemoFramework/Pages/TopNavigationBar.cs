@@ -7,25 +7,28 @@ namespace SeleniumDemoFramework
     public class TopNavigationBar
     {
         [FindsBy(How = How.ClassName, Using = "sel-companyLink")]
-        private IWebElement companyLink;
+        public IWebElement companyLink;
 
         [FindsBy(How = How.ClassName, Using = "sel-aboutLink")]
-        private IWebElement aboutLink;
+        public IWebElement aboutLink;
 
         [FindsBy(How = How.ClassName, Using = "sel-contactLink")]
-        private IWebElement contactLink;
+        public IWebElement contactLink;
 
         [FindsBy(How = How.ClassName, Using = "sel-productsLink")]
-        private IWebElement productsLink;
+        public IWebElement productsLink;
 
         [FindsBy(How = How.ClassName, Using = "sel-cartLink")]
-        private IWebElement cartLink;
+        public IWebElement cartLink;
 
         [FindsBy(How = How.ClassName, Using = "sel-registerLink")]
-        private IWebElement registerLink;
+        public IWebElement registerLink;
 
         [FindsBy(How = How.ClassName, Using = "sel-loginLink")]
-        private IWebElement loginLink;
+        public IWebElement loginLink;
+
+        [FindsBy(How = How.ClassName, Using = "sel-username")]
+        public IWebElement userName;
 
 
 
@@ -39,7 +42,7 @@ namespace SeleniumDemoFramework
             aboutLink.Click();
         }
 
-        public void clickConstactLink()
+        public void clickContactLink()
         {
             contactLink.Click();
         }

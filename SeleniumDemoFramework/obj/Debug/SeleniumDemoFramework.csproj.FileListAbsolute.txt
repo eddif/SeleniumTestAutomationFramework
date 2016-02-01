@@ -26,6 +26,6 @@ D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\bin\Debug\nu
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\bin\Debug\nunit.framework.xml
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\bin\Debug\WebDriver.xml
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\bin\Debug\WebDriver.Support.xml
+D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\obj\Debug\SeleniumDemoFramework.csprojResolveAssemblyReference.cache
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\obj\Debug\SeleniumDemoFramework.dll
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\obj\Debug\SeleniumDemoFramework.pdb
-D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\obj\Debug\SeleniumDemoFramework.csprojResolveAssemblyReference.cache

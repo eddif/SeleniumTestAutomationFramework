@@ -13,9 +13,9 @@ namespace SeleniumDemoFramework.Generators
         {
             var user = new User
             {
-                FullName = NameGenerator.Generate(),
+                //FullName = NameGenerator.Generate(),
+                //MobileNumber = PhoneGenerator.Generate(),
                 EmailAddress = EmailAddressGenerator.Generate(),
-                MobileNumber = PhoneGenerator.Generate(),
                 Password = PasswordGenerator.Generate()
             };
 
@@ -26,9 +26,9 @@ namespace SeleniumDemoFramework.Generators
 
     public class User
     {
-        public string FullName { get; set; }
+        //public string FullName { get; set; }
+        //public string MobileNumber { get; set; }
         public string EmailAddress { get; set; }
-        public string MobileNumber { get; set; }
         public string Password { get; set; }
     }
 }

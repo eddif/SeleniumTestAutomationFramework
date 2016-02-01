@@ -53,9 +53,9 @@ namespace SeleniumDemoFramework
             get { return GetPage<LoginPage>(); }
         }
 
-        public static ForgotPasswordPage ForgotPassword
+        public static ResetPasswordPage ForgotPassword
         {
-            get { return GetPage<ForgotPasswordPage>(); }
+            get { return GetPage<ResetPasswordPage>(); }
         }
 
         public static TopNavigationBar TopNavigation

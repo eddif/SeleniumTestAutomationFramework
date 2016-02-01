@@ -7,19 +7,16 @@ namespace SeleniumDemoFramework
     public class RegisterPage
     {
 
-        [FindsBy(How = How.Name, Using = "first_name")]
-        private IWebElement fullName;
+        [FindsBy(How = How.ClassName, Using = "sel-email")]
+        private IWebElement emailAddressField;
 
-        [FindsBy(How = How.Name, Using = "email")]
-        private IWebElement emailAddress;
+        [FindsBy(How = How.ClassName, Using = "sel-password")]
+        private IWebElement passwordField;
 
-        [FindsBy(How = How.Name, Using = "phone_number")]
-        private IWebElement phoneNumber;
+        [FindsBy(How = How.ClassName, Using = "sel-confirm-password")]
+        private IWebElement confirmPasswordField;
 
-        [FindsBy(How = How.Name, Using = "password")]
-        private IWebElement password;
-
-        [FindsBy(How = How.CssSelector, Using = "login-holder > div:nth-child(2) > div:nth-child(1) > form:nth-child(2) > button:nth-child(2)")]
+        [FindsBy(How = How.ClassName, Using = "sel-register")]
         private IWebElement registerButton;
 
         public void Goto()
@@ -34,10 +31,9 @@ namespace SeleniumDemoFramework
 
         public void ClearAllRegirsterUserFormFields()
         {
-            fullName.Clear();
-            emailAddress.Clear();
-            phoneNumber.Clear();
-            password.Clear();
+            emailAddressField.Clear();
+            passwordField.Clear();
+            confirmPasswordField.Clear();
         }
 
 
@@ -47,10 +43,9 @@ namespace SeleniumDemoFramework
             ClearAllRegirsterUserFormFields();
 
             var user = UserGenerator.Generate();
-            fullName.SendKeys(user.FullName);
-            emailAddress.SendKeys(user.EmailAddress);
-            phoneNumber.SendKeys(user.MobileNumber);
-            password.SendKeys(user.Password);
+            emailAddressField.SendKeys(user.EmailAddress);
+            passwordField.SendKeys(user.Password);
+            confirmPasswordField.SendKeys(user.Password);
             
             registerButton.Click();
         }

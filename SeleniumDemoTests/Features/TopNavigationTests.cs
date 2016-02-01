@@ -11,14 +11,27 @@ namespace SeleniumDemoTests.Features
         public void AllLinksVisibleToUser()
         {
             Pages.Login.Goto();
-            Assert.IsTrue(Pages.Login.IsAt());
+            Assert.IsTrue(Pages.TopNavigation.companyLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.aboutLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.contactLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.productsLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.cartLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.registerLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.loginLink.Displayed);
         }
 
         [Test]
         public void AllLinksVisibleToAdmin()
         {
             Pages.Login.Goto();
-            Assert.IsTrue(Pages.Login.IsAt());
+            //login as admin --> not complete
+            Assert.IsTrue(Pages.TopNavigation.companyLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.aboutLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.contactLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.productsLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.cartLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.registerLink.Displayed);
+            Assert.IsTrue(Pages.TopNavigation.loginLink.Displayed);
         }
 
         [TestCase("Homepage")]
@@ -58,7 +71,7 @@ namespace SeleniumDemoTests.Features
                     Assert.IsTrue(Pages.Login.IsAt());
                     break;
             }
-                
+
         }
 
         [Test]
@@ -71,51 +84,52 @@ namespace SeleniumDemoTests.Features
         [Test]
         public void CanAccessContactPage()
         {
-            Pages.Login.Goto();
-            Pages.Login.ClickForgotPasswordButton();
-            Assert.IsTrue(Browser.CurrentURL.Contains("forgot"));
+            Pages.Home.Goto();
+            Pages.TopNavigation.clickContactLink();
+            Assert.IsTrue(Pages.Contact.IsAt());
+            Assert.IsTrue(Browser.CurrentURL.Contains("Contact"));
         }
 
         [Test]
         public void CanAccessProductsPage()
         {
-            Pages.Login.Goto();
-            Pages.Login.ClickForgotPasswordButton();
-            Assert.IsTrue(Browser.CurrentURL.Contains("forgot"));
+            Pages.Home.Goto();
+            Pages.TopNavigation.clickProductsLink();
+
+            Assert.IsTrue(Pages.Products.IsAt());
+            Assert.IsTrue(Browser.CurrentURL.Contains("ProductList"));
         }
 
         [Test]
         public void CanAccessCartPage()
         {
-            Pages.Login.Goto();
-            Pages.Login.ClickForgotPasswordButton();
-            Assert.IsTrue(Browser.CurrentURL.Contains("forgot"));
+            Pages.Home.Goto();
+            Pages.TopNavigation.clickCartLink();
+
+            Assert.IsTrue(Pages.Contact.IsAt());
+            Assert.IsTrue(Browser.CurrentURL.Contains("ShppingCart"));
         }
 
         [Test]
         public void CanAccessRegisterPage()
         {
-            Pages.Login.Goto();
-            Pages.Login.ClickRegisterNowButton();
-            Assert.IsTrue(Browser.CurrentURL.Contains("register"));
+            Pages.Home.Goto();
+            Pages.TopNavigation.clickRegisterLink();
+
+            Assert.IsTrue(Pages.Register.IsAt());
+            Assert.IsTrue(Browser.CurrentURL.Contains("Account/Register"));
         }
 
         [Test]
         public void CanAccessLoginPage()
         {
-            Pages.Login.Goto();
-            Pages.Login.ClickRegisterNowButton();
-            Assert.IsTrue(Browser.CurrentURL.Contains("register"));
+            Pages.Home.Goto();
+            Pages.TopNavigation.clickLoginLink();
+
+            Assert.IsTrue(Pages.Login.IsAt());
+            Assert.IsTrue(Browser.CurrentURL.Contains("Account/Login"));
         }
 
-        [Test]
-        public void CanRegisterAsNewUser()
-        {
-            Pages.Login.Goto();
-            Pages.Login.ClickRegisterNowButton();
-            Pages.Register.RegisterNewUser();
-            Assert.IsTrue(Browser.CurrentURL.Contains("Home"));
-        }
-
+       
     }
 }

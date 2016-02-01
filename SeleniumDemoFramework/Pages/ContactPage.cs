@@ -8,7 +8,7 @@ namespace SeleniumDemoFramework
     {
         public void Goto()
         {
-            Browser.Goto("Contact");
+            Browser.Goto("/Contact");
         }
 
         public bool IsAt()

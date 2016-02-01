@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using System.Configuration;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Firefox;
 
@@ -6,21 +8,21 @@ namespace SeleniumDemoFramework
 {
     public class Browser
     {
-
-        private static string baseUrl = "http://businessco.azurewebsites.net/";
-
-        private static IWebDriver webDriver = new FirefoxDriver();
-
         public IWebDriver WebDriver { get; set; }
+        public string environmentURL { get; set; }
+
+        private static string baseUrl = "http://businessco.azurewebsites.net/"; //use app config for determining environment
+        private static IWebDriver webDriver = new FirefoxDriver();
 
         public Browser(IWebDriver webDriver)
         {
+            environmentURL = ConfigurationManager.AppSettings["Base_URL"];
             WebDriver = webDriver;
         }
 
-
         public static void Initialize()
         {
+            
             Goto("");
         }
 
