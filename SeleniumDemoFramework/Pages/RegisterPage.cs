@@ -22,6 +22,15 @@ namespace SeleniumDemoFramework
         [FindsBy(How = How.CssSelector, Using = "login-holder > div:nth-child(2) > div:nth-child(1) > form:nth-child(2) > button:nth-child(2)")]
         private IWebElement registerButton;
 
+        public void Goto()
+        {
+            Browser.Goto("Register");
+        }
+
+        public bool IsAt()
+        {
+            return Browser.Title.Contains("Register");
+        }
 
         public void ClearAllRegirsterUserFormFields()
         {

@@ -8,7 +8,7 @@ using System.Threading;
 
 namespace SeleniumDemoFramework
 {
-    public class PricingPage
+    public class AboutPage
     {
 
         #region GENERAL PAGE ELEMENTS

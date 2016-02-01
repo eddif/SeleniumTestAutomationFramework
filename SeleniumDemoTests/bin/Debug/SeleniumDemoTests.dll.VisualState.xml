@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<VisualState xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ShowCheckBoxes="true">
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
   <TopNode>[0-1007]D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\SeleniumDemoTests.dll</TopNode>
   <SelectedNode>[0-1007]D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\SeleniumDemoTests.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>

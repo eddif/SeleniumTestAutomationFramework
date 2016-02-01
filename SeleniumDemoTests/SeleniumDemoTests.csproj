@@ -72,12 +72,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
-    <Compile Include="Features\PricingPlan.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PricingPlan.feature</DependentUpon>
-    </Compile>
-    <Compile Include="Features\PricingPlanSteps.cs" />
+    <Compile Include="Features\TopNavigationTests.cs" />
     <Compile Include="SmokeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -90,10 +85,6 @@
   <ItemGroup>
     <None Include="App.config">
       <SubType>Designer</SubType>
-    </None>
-    <None Include="Features\PricingPlan.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>PricingPlan.feature.cs</LastGenOutput>
     </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>

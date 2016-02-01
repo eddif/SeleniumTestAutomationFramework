@@ -7,7 +7,7 @@ namespace SeleniumDemoFramework
     public class Browser
     {
 
-        private static string baseUrl = "http://seleniumsampleapp.azurewebsites.net/";
+        private static string baseUrl = "http://businessco.azurewebsites.net/";
 
         private static IWebDriver webDriver = new FirefoxDriver();
 

@@ -27,7 +27,7 @@ namespace SeleniumDemoFramework
 
         public void Goto()
         {
-            Pages.TopNavigation.LogIn();
+            Pages.TopNavigation.clickLoginLink();
         }
 
         public bool IsAt()

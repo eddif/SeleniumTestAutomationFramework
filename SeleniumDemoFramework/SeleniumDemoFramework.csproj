@@ -64,17 +64,20 @@
     <Compile Include="Generators\NameGenerator.cs" />
     <Compile Include="Generators\PhoneGenerator.cs" />
     <Compile Include="Browser.cs" />
+    <Compile Include="Pages\CartPage.cs" />
     <Compile Include="Pages\ForgotPasswordPage.cs" />
-    <Compile Include="Pages\PricingPage.cs" />
-    <Compile Include="Pages\Testimonials.cs" />
+    <Compile Include="Pages\HomePage.cs" />
+    <Compile Include="Pages\About.cs" />
+    <Compile Include="Pages\ContactPage.cs" />
     <Compile Include="Pages\LoginPage.cs" />
     <Compile Include="Pages\Pages.cs" />
     <Compile Include="Generators\UserGenerator.cs" />
     <Compile Include="Generators\PasswordGenerator.cs" />
+    <Compile Include="Pages\ProductsPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pages\RegisterPage.cs" />
     <Compile Include="TestBase.cs" />
-    <Compile Include="Pages\TopNavigationPage.cs" />
+    <Compile Include="Pages\TopNavigationBar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

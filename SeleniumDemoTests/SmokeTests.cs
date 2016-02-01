@@ -8,14 +8,30 @@ namespace SeleniumDemoTests
     {
 
         [Test]
-        public void CanAccessLoginPage()
+        public void CanAccessAboutPage()
         {
             Pages.Login.Goto();
             Assert.IsTrue(Pages.Login.IsAt());
         }
 
         [Test]
-        public void CanAccessResetPasswordPage()
+        public void CanAccessContactPage()
+        {
+            Pages.Login.Goto();
+            Pages.Login.ClickForgotPasswordButton();
+            Assert.IsTrue(Browser.CurrentURL.Contains("forgot"));
+        }
+
+        [Test]
+        public void CanAccessProductsPage()
+        {
+            Pages.Login.Goto();
+            Pages.Login.ClickForgotPasswordButton();
+            Assert.IsTrue(Browser.CurrentURL.Contains("forgot"));
+        }
+
+        [Test]
+        public void CanAccessCartPage()
         {
             Pages.Login.Goto();
             Pages.Login.ClickForgotPasswordButton();
@@ -31,7 +47,14 @@ namespace SeleniumDemoTests
         }
 
         [Test]
-        [Ignore("SAMPLE - NOT TESTED, BUT COULD WORK - DID NOT WANT TO TEST FATE AND BLOAT DATABASE")]
+        public void CanAccessLoginPage()
+        {
+            Pages.Login.Goto();
+            Pages.Login.ClickRegisterNowButton();
+            Assert.IsTrue(Browser.CurrentURL.Contains("register"));
+        }
+
+        [Test]
         public void CanRegisterAsNewUser()
         {
             Pages.Login.Goto();

@@ -18,14 +18,29 @@ namespace SeleniumDemoFramework
             return page;
         }
 
-        public static TopNavigation TopNavigation
+        public static HomePage Home
         {
-            get { return GetPage<TopNavigation>(); }
+            get { return GetPage<HomePage>(); }
         }
 
-        public static TestimonialsPage Home
+        public static AboutPage About
         {
-            get { return GetPage<TestimonialsPage>(); }
+            get { return GetPage<AboutPage>(); }
+        }
+
+        public static ContactPage Contact
+        {
+            get { return GetPage<ContactPage>(); }
+        }
+
+        public static ProductsPage Products
+        {
+            get { return GetPage<ProductsPage>(); }
+        }
+
+        public static CartPage Cart
+        {
+            get { return GetPage<CartPage>(); }
         }
 
         public static RegisterPage Register
@@ -43,9 +58,9 @@ namespace SeleniumDemoFramework
             get { return GetPage<ForgotPasswordPage>(); }
         }
 
-        public static PricingPage Pricing
+        public static TopNavigationBar TopNavigation
         {
-            get { return GetPage<PricingPage>(); }
+            get { return GetPage<TopNavigationBar>(); }
         }
     }
 }

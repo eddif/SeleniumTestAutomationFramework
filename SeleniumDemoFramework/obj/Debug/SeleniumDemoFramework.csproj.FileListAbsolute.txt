@@ -28,3 +28,4 @@ D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\bin\Debug\We
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\bin\Debug\WebDriver.Support.xml
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\obj\Debug\SeleniumDemoFramework.dll
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\obj\Debug\SeleniumDemoFramework.pdb
+D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoFramework\obj\Debug\SeleniumDemoFramework.csprojResolveAssemblyReference.cache
