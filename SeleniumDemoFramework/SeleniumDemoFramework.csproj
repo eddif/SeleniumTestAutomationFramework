@@ -30,6 +30,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.2\lib\net45\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.core">
       <HintPath>..\packages\NUnit.Runners.2.6.4\tools\lib\nunit.core.dll</HintPath>
     </Reference>
@@ -80,11 +83,14 @@
     <Compile Include="Pages\RegisterPage.cs" />
     <Compile Include="TestBase.cs" />
     <Compile Include="Pages\TopNavigationBar.cs" />
+    <Compile Include="TestData\DataAccess.cs" />
+    <Compile Include="TestData\UserData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
+    <None Include="TestData\TestData.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\packages\Selenium.WebDriver.ChromeDriver.2.10.0.0\content\chromedriver.exe">

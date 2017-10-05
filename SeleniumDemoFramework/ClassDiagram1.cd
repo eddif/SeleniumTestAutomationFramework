@@ -1,2 +1,158 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SeleniumDemoFramework.Browser" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAUAAAAAAAAAAEAAAgBAAAAIIIACACIA=</HashCode>
+      <FileName>Browser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.Extensions" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAgAA=</HashCode>
+      <FileName>Extensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.AboutPage" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Pages\About.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.CartPage" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Pages\CartPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.ContactPage" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Pages\ContactPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.ResetPasswordPage" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAABAAAAAAAAAQAAAAAAAAAAIA=</HashCode>
+      <FileName>Pages\ForgotPasswordPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.HomePage" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Pages\HomePage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.LoginPage" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAQAgAAACAAIABAAAAAAAABAAAAAIAAQAAII=</HashCode>
+      <FileName>Pages\LoginPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.Pages" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEABAAAAAAEACAAAAAAAAAQRAAAAAAAQAAAAAAw=</HashCode>
+      <FileName>Pages\Pages.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.ProductsPage" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Pages\ProductsPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.RegisterPage" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAEAAAAAAAAAAAABAABEAAAAQAAAAAIAAAAAIA=</HashCode>
+      <FileName>Pages\RegisterPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.TopNavigationBar" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACAAEAAAAAgAAAgAAAAggFAAAAAAEAESAAA=</HashCode>
+      <FileName>Pages\TopNavigationBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.TestBase" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAABAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>TestBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOpenQA.Selenium.IWebDriverExtensions" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\IWebDriverExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.Generators.EmailAddressGenerator" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Generators\EmailAddressGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.Generators.NameGenerator" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Generators\NameGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.Generators.PasswordGenerator" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAQAEAAAAA=</HashCode>
+      <FileName>Generators\PasswordGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.Generators.PhoneGenerator" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Generators\PhoneGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.Generators.UserGenerator" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAEEAAAAA=</HashCode>
+      <FileName>Generators\UserGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.Generators.User" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAA=</HashCode>
+      <FileName>Generators\UserGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.TestData.DataAccess" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAgAAAAAA=</HashCode>
+      <FileName>TestData\DataAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeleniumDemoFramework.TestData.UserData" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>TestData\UserData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

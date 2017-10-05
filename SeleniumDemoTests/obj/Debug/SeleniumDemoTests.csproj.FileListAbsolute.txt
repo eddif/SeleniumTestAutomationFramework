@@ -36,3 +36,7 @@ D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\WebDri
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\obj\Debug\SeleniumDemoTests.csprojResolveAssemblyReference.cache
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\obj\Debug\SeleniumDemoTests.dll
 D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\obj\Debug\SeleniumDemoTests.pdb
+D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\Dapper.dll
+D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\SeleniumDemoFramework.dll.config
+D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\Dapper.xml
+D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\obj\Debug\SeleniumDemoTests.csproj.CoreCompileInputs.cache

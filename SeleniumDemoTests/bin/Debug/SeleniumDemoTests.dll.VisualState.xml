@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="true">
-  <TopNode>[0-1007]D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\SeleniumDemoTests.dll</TopNode>
-  <SelectedNode>[0-1007]D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\SeleniumDemoTests.dll</SelectedNode>
+  <TopNode>[0-1025]D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\SeleniumDemoTests.dll</TopNode>
+  <SelectedNode>[0-1025]D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\SeleniumDemoTests.dll</SelectedNode>
   <ExcludeCategories>false</ExcludeCategories>
   <Nodes>
-    <Node UniqueName="[0-1007]D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\SeleniumDemoTests.dll" Expanded="true" />
-    <Node UniqueName="[0-1008]SeleniumDemoTests" Expanded="true" />
-    <Node UniqueName="[0-1009]SeleniumDemoTests.Features" Expanded="true" />
-    <Node UniqueName="[0-1005]SeleniumDemoTests.Features.PricingPlanFeature" Expanded="true" />
+    <Node UniqueName="[0-1025]D:\_projects\_stage\SeleniumDemo\SeleniumDemo\SeleniumDemoTests\bin\Debug\SeleniumDemoTests.dll" Expanded="true" />
+    <Node UniqueName="[0-1026]SeleniumDemoTests" Expanded="true" />
+    <Node UniqueName="[0-1027]SeleniumDemoTests.Features" Expanded="true" />
+    <Node UniqueName="[0-1009]SeleniumDemoTests.Features.TopNavigationTests" Expanded="true" />
+    <Node UniqueName="[0-1012]SeleniumDemoTests.Features.TopNavigationTests.TopNavigationVisibleOnAllPages" Expanded="true" />
     <Node UniqueName="[0-1000]SeleniumDemoTests.SmokeTests" Expanded="true" />
   </Nodes>
 </VisualState>

@@ -2,6 +2,7 @@ using System.Runtime.InteropServices;
 using SeleniumDemoFramework.Generators;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using SeleniumDemoFramework.TestData;
 
 namespace SeleniumDemoFramework
 {
@@ -50,7 +51,6 @@ namespace SeleniumDemoFramework
             LogIn(user);
         }
 
-
         public void ClickRegisterNowButton()
         {
             rememberMeCheckbox.Click();
@@ -70,6 +70,17 @@ namespace SeleniumDemoFramework
             passwordField.SendKeys(user.Password);
             loginButton.Click();
         }
+
+        public void LogIn(string testName)
+        {
+            var UserData = DataAccess.GetTestData(testName);
+            ClearLoginFields();
+            emailField.SendKeys(UserData.Username);
+            passwordField.SendKeys(UserData.Password);
+            loginButton.Click();
+        }
+
+
 
         public enum LoginOptions
         {

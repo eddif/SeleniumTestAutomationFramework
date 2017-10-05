@@ -80,6 +80,14 @@ namespace SeleniumDemoTests
 
             Assert.IsTrue(Pages.TopNavigation.userName.Displayed);
         }
+
+        [Test]
+        public void CanLoginAsAdminUser()
+        {
+            Pages.Login.LogIn("AdminUser");
+
+            Assert.IsTrue(Pages.TopNavigation.userName.Displayed);
+        }
     }
 
 
