@@ -19,6 +19,7 @@ namespace SeleniumDemoFramework
         public bool IsAt()
         {
             return Browser.Title.Contains("About");
+            //new branch here//
         }
 
     }
